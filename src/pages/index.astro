@@ -1,0 +1,122 @@
+---
+const STRIPE_AUDIT_URL = "#start"; // TODO: paste $99 Stripe payment link before launch
+const STRIPE_BUILD_URL = "#start"; // TODO: paste $499 Stripe payment link before launch
+import "../styles/global.css";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>Books &amp; Agents — the CFO-grade AI audit, delivered tonight</title>
+		<meta name="description" content="A fixed-scope $99 audit by a real CFO. The three numbers you're not watching, plus the five highest-ROI AI substitutions in your finance workflow. Delivered tonight." />
+		<meta property="og:title" content="Books &amp; Agents — the CFO-grade AI audit" />
+		<meta property="og:description" content="$99. Delivered tonight. Real CFO eyes, ranked AI substitutions, no retainer." />
+		<meta name="generator" content={Astro.generator} />
+	</head>
+	<body class="bg-stone-50 text-stone-900 antialiased">
+
+		<main class="mx-auto max-w-3xl px-6 py-16 sm:py-24">
+
+			<!-- Wordmark -->
+			<p class="font-mono text-xs tracking-[0.2em] uppercase text-stone-500 mb-12">
+				Books <span class="text-stone-400">&amp;</span> Agents
+			</p>
+
+			<!-- Hero -->
+			<section class="mb-24">
+				<h1 class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight mb-6">
+					The CFO-grade AI audit for small businesses.
+				</h1>
+				<p class="text-lg sm:text-xl text-stone-700 leading-snug mb-10 max-w-2xl">
+					Send your books. A real CFO finds the three numbers you're not watching and ranks the five highest-ROI AI substitutions in your finance workflow. Delivered tonight. <span class="tabular-nums">$99</span>.
+				</p>
+				<a href={STRIPE_AUDIT_URL} class="inline-block bg-stone-900 text-stone-50 px-6 py-3 rounded-md font-medium hover:bg-stone-800 transition tabular-nums">
+					Start the audit — $99
+				</a>
+			</section>
+
+			<!-- Run by -->
+			<section class="mb-24 border-l-2 border-stone-300 pl-6">
+				<p class="text-stone-700 leading-relaxed">
+					Run by <span class="font-medium text-stone-900">Kyle Dickinson</span> — CFO at Miller Creek Lawn &amp; Landscape, fractional CFO advisor to small businesses, co-owner of a 121-year-old menswear shop in Duluth. Building agentic Claude workflows before "agents" was a buzzword.
+				</p>
+			</section>
+
+			<!-- The trade -->
+			<section class="mb-24">
+				<h2 class="font-serif text-2xl mb-8 tracking-tight">The trade.</h2>
+				<div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+					<div>
+						<p class="font-mono text-[10px] uppercase tracking-[0.2em] text-stone-500 mb-4">You send</p>
+						<ul class="space-y-3 text-stone-800 leading-relaxed">
+							<li>— QBO export (P&amp;L + balance sheet, last 90 days)</li>
+							<li>— A 3-paragraph description of your monthly close</li>
+							<li>— <span class="tabular-nums">$99</span> via Stripe</li>
+						</ul>
+					</div>
+					<div>
+						<p class="font-mono text-[10px] uppercase tracking-[0.2em] text-stone-500 mb-4">You get tonight</p>
+						<ul class="space-y-3 text-stone-800 leading-relaxed">
+							<li>— Three numbers you should be watching, and aren't</li>
+							<li>— Five AI substitutions, ranked by hours saved vs. setup cost</li>
+							<li>— The specific tools I'd use, with reasoning</li>
+							<li>— The first thing I'd build, if you want it built</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Optional build -->
+			<section class="mb-24 bg-stone-100 -mx-6 px-6 py-10 sm:rounded-lg sm:mx-0 sm:px-10">
+				<p class="font-mono text-[10px] uppercase tracking-[0.2em] text-stone-500 mb-3">Optional add-on</p>
+				<h2 class="font-serif text-2xl mb-4 tracking-tight">Build the top recommendation.</h2>
+				<p class="text-stone-700 leading-relaxed max-w-2xl mb-5">
+					After the audit, if you want me to build the #1 substitution — a working Claude project, a Zapier scenario, a small MCP server, whatever fits — I deliver within 48 hours. One-page usage guide included.
+				</p>
+				<p class="font-mono text-sm text-stone-900 tabular-nums">$499 — offered after the audit, not before.</p>
+			</section>
+
+			<!-- FAQ -->
+			<section class="mb-24">
+				<h2 class="font-serif text-2xl mb-10 tracking-tight">Questions worth asking.</h2>
+				<div class="space-y-8">
+					<div>
+						<p class="font-medium text-stone-900 mb-2">How is this different from asking ChatGPT yourself?</p>
+						<p class="text-stone-700 leading-relaxed">You're paying for the judgment about <em>which</em> AI to use and <em>where</em> it actually saves you hours. The AI is the easy part.</p>
+					</div>
+					<div>
+						<p class="font-medium text-stone-900 mb-2">What if I don't use QuickBooks?</p>
+						<p class="text-stone-700 leading-relaxed">Xero, Wave, or a clean spreadsheet works. Message me first to confirm.</p>
+					</div>
+					<div>
+						<p class="font-medium text-stone-900 mb-2">Why so cheap?</p>
+						<p class="text-stone-700 leading-relaxed">It's a fixed-scope audit, not a retainer. Two hours of focused CFO eyes. Nothing more, nothing less.</p>
+					</div>
+					<div>
+						<p class="font-medium text-stone-900 mb-2">What if the audit isn't useful?</p>
+						<p class="text-stone-700 leading-relaxed">Refund, no friction. Reply to the email, get your money back.</p>
+					</div>
+					<div>
+						<p class="font-medium text-stone-900 mb-2">Will you push me into a retainer?</p>
+						<p class="text-stone-700 leading-relaxed">No. The optional build is the only upsell, and it's only offered if you ask after the audit. If you don't, that's the end. No follow-up.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA repeat -->
+			<section class="border-t border-stone-200 pt-12">
+				<h2 class="font-serif text-3xl mb-6 tracking-tight">Start tonight.</h2>
+				<a href={STRIPE_AUDIT_URL} class="inline-block bg-stone-900 text-stone-50 px-6 py-3 rounded-md font-medium hover:bg-stone-800 transition tabular-nums mb-8">
+					Start the audit — $99
+				</a>
+				<p class="font-mono text-xs text-stone-500 tracking-wider">
+					Books &amp; Agents · Duluth, Minnesota
+				</p>
+			</section>
+
+		</main>
+
+	</body>
+</html>
