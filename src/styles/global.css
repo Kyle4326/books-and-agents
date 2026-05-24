@@ -1,1 +1,37 @@
 @import "tailwindcss";
+
+@theme {
+	/* Warm cream + ink + burnt amber */
+	--color-cream: #F5EFE4;
+	--color-surface: #FAF6EE;
+	--color-ink: #1A1814;
+	--color-ink-soft: #2A2620;
+	--color-muted: #5C544A;
+	--color-hairline: #D9CFB8;
+	--color-hairline-strong: #C9BFA8;
+	--color-accent: #B45309;
+	--color-accent-hover: #92400E;
+	--color-accent-soft: #F4E5C8;
+
+	/* Type system */
+	--font-serif: "Newsreader", ui-serif, Georgia, Cambria, serif;
+	--font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+	--font-mono: "JetBrains Mono", ui-monospace, "SF Mono", "Cascadia Mono", monospace;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--font-sans);
+	font-feature-settings: "ss01", "cv11";
+}
+
+.font-serif {
+	font-optical-sizing: auto;
+}
+
+.tabular-nums {
+	font-variant-numeric: tabular-nums;
+}

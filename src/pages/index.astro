@@ -9,114 +9,303 @@ import "../styles/global.css";
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>Books &amp; Agents — the CFO-grade AI audit, delivered tonight</title>
-		<meta name="description" content="A fixed-scope $99 audit by a real CFO. The three numbers you're not watching, plus the five highest-ROI AI substitutions in your finance workflow. Delivered tonight." />
-		<meta property="og:title" content="Books &amp; Agents — the CFO-grade AI audit" />
-		<meta property="og:description" content="$99. Delivered tonight. Real CFO eyes, ranked AI substitutions, no retainer." />
+		<title>Books &amp; Agents — a CFO who builds agents, $99 audit, tonight</title>
+		<meta name="description" content="Send three paragraphs about your most painful repetitive task. Tonight I'll send back the agent I'd build to handle it — the tools, prompts, integrations, build estimate. $99. A CFO who builds agents, not an AI consultant who's never run a P&amp;L." />
+		<meta property="og:title" content="Books &amp; Agents — a CFO who builds agents" />
+		<meta property="og:description" content="$99 first-agent audit. Tonight. A real operator designs the agent your business needs next, with the tools and prompts to ship it." />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 	</head>
-	<body class="bg-stone-50 text-stone-900 antialiased">
+	<body class="bg-cream text-ink antialiased">
 
-		<main class="mx-auto max-w-3xl px-6 py-16 sm:py-24">
-
-			<!-- Wordmark -->
-			<p class="font-mono text-xs tracking-[0.2em] uppercase text-stone-500 mb-12">
-				Books <span class="text-stone-400">&amp;</span> Agents
+		<!-- Wordmark -->
+		<header class="mx-auto max-w-6xl px-6 pt-10 pb-6 sm:pt-14">
+			<p class="font-mono text-xs tracking-[0.22em] uppercase text-muted">
+				Books <span class="text-hairline-strong">&amp;</span> Agents
 			</p>
+		</header>
 
-			<!-- Hero -->
-			<section class="mb-24">
-				<h1 class="font-serif text-4xl sm:text-5xl leading-[1.1] tracking-tight mb-6">
-					The CFO-grade AI audit for small businesses.
-				</h1>
-				<p class="text-lg sm:text-xl text-stone-700 leading-snug mb-10 max-w-2xl">
-					Send your books. A real CFO finds the three numbers you're not watching and ranks the five highest-ROI AI substitutions in your finance workflow. Delivered tonight. <span class="tabular-nums">$99</span>.
-				</p>
-				<a href={STRIPE_AUDIT_URL} class="inline-block bg-stone-900 text-stone-50 px-6 py-3 rounded-md font-medium hover:bg-stone-800 transition tabular-nums">
-					Start the audit — $99
-				</a>
-			</section>
+		<!-- Hero: split narrative + mockup -->
+		<section class="mx-auto max-w-6xl px-6 pt-4 pb-20 sm:pb-28">
+			<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
 
-			<!-- Run by -->
-			<section class="mb-24 border-l-2 border-stone-300 pl-6">
-				<p class="text-stone-700 leading-relaxed">
-					Run by <span class="font-medium text-stone-900">Kyle Dickinson</span> — CFO at Miller Creek Lawn &amp; Landscape, fractional CFO advisor to small businesses, co-owner of a 121-year-old menswear shop in Duluth. Building agentic Claude workflows before "agents" was a buzzword.
-				</p>
-			</section>
-
-			<!-- The trade -->
-			<section class="mb-24">
-				<h2 class="font-serif text-2xl mb-8 tracking-tight">The trade.</h2>
-				<div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
-					<div>
-						<p class="font-mono text-[10px] uppercase tracking-[0.2em] text-stone-500 mb-4">You send</p>
-						<ul class="space-y-3 text-stone-800 leading-relaxed">
-							<li>— QBO export (P&amp;L + balance sheet, last 90 days)</li>
-							<li>— A 3-paragraph description of your monthly close</li>
-							<li>— <span class="tabular-nums">$99</span> via Stripe</li>
-						</ul>
-					</div>
-					<div>
-						<p class="font-mono text-[10px] uppercase tracking-[0.2em] text-stone-500 mb-4">You get tonight</p>
-						<ul class="space-y-3 text-stone-800 leading-relaxed">
-							<li>— Three numbers you should be watching, and aren't</li>
-							<li>— Five AI substitutions, ranked by hours saved vs. setup cost</li>
-							<li>— The specific tools I'd use, with reasoning</li>
-							<li>— The first thing I'd build, if you want it built</li>
-						</ul>
+				<!-- Left: narrative + CTA -->
+				<div class="lg:col-span-7">
+					<p class="font-mono text-[11px] tracking-[0.18em] uppercase text-accent mb-6">
+						A CFO who builds agents <span class="text-muted">·</span> Not an AI consultant who's never run a P&amp;L
+					</p>
+					<h1 class="font-serif text-[2.5rem] sm:text-5xl lg:text-6xl leading-[1.04] tracking-tight mb-7 text-ink">
+						You know AI matters.<br />
+						You can't tell which tools are real.
+					</h1>
+					<p class="text-lg sm:text-xl text-ink-soft leading-snug mb-6 max-w-xl">
+						Every newsletter you read is about AI. Every competitor is automating something. You're still in spreadsheets and you can't tell which AI tools are real and which are LinkedIn theater.
+					</p>
+					<p class="text-lg sm:text-xl text-ink-soft leading-snug mb-10 max-w-xl">
+						Send me three paragraphs about your most painful repetitive task. Tonight I'll send back the agent I'd build to handle it — the tools, the prompts, the integrations, the build estimate. Real operator eyes. <span class="tabular-nums text-ink font-medium">$99</span>. Refund if it isn't useful.
+					</p>
+					<div class="flex flex-wrap items-center gap-5">
+						<a href={STRIPE_AUDIT_URL} class="inline-flex items-center gap-2 bg-accent text-cream px-6 py-3.5 rounded-md font-medium hover:bg-accent-hover transition tabular-nums">
+							Start the audit — $99
+							<span aria-hidden="true">→</span>
+						</a>
+						<a href="#anatomy" class="font-mono text-sm text-muted hover:text-ink transition underline-offset-4 hover:underline">
+							See what arrives in your inbox
+						</a>
 					</div>
 				</div>
-			</section>
 
-			<!-- Optional build -->
-			<section class="mb-24 bg-stone-100 -mx-6 px-6 py-10 sm:rounded-lg sm:mx-0 sm:px-10">
-				<p class="font-mono text-[10px] uppercase tracking-[0.2em] text-stone-500 mb-3">Optional add-on</p>
-				<h2 class="font-serif text-2xl mb-4 tracking-tight">Build the top recommendation.</h2>
-				<p class="text-stone-700 leading-relaxed max-w-2xl mb-5">
-					After the audit, if you want me to build the #1 substitution — a working Claude project, a Zapier scenario, a small MCP server, whatever fits — I deliver within 48 hours. One-page usage guide included.
-				</p>
-				<p class="font-mono text-sm text-stone-900 tabular-nums">$499 — offered after the audit, not before.</p>
-			</section>
+				<!-- Right: deliverable mockup -->
+				<div class="lg:col-span-5 lg:pl-4 relative">
+					<div class="relative max-w-md mx-auto lg:mx-0">
+						<!-- Background paper -->
+						<div class="absolute inset-0 bg-surface border border-hairline rounded-sm shadow-lg rotate-[-2deg] origin-center" aria-hidden="true"></div>
+						<!-- Foreground card -->
+						<article class="relative bg-surface border border-hairline rounded-sm shadow-2xl p-7 sm:p-8 rotate-[1.5deg] hover:rotate-0 transition-transform duration-500">
+							<!-- Header row -->
+							<div class="flex items-baseline justify-between mb-6 pb-4 border-b border-hairline">
+								<div>
+									<h3 class="font-serif text-base text-ink leading-tight">The First-Agent Audit</h3>
+									<p class="font-mono text-[10px] tracking-wider text-muted mt-1.5 uppercase">For: ████ ███████ · 2026-05-25</p>
+								</div>
+								<p class="font-mono text-[11px] text-accent tabular-nums">$99</p>
+							</div>
 
-			<!-- FAQ -->
-			<section class="mb-24">
-				<h2 class="font-serif text-2xl mb-10 tracking-tight">Questions worth asking.</h2>
-				<div class="space-y-8">
-					<div>
-						<p class="font-medium text-stone-900 mb-2">How is this different from asking ChatGPT yourself?</p>
-						<p class="text-stone-700 leading-relaxed">You're paying for the judgment about <em>which</em> AI to use and <em>where</em> it actually saves you hours. The AI is the easy part.</p>
-					</div>
-					<div>
-						<p class="font-medium text-stone-900 mb-2">What if I don't use QuickBooks?</p>
-						<p class="text-stone-700 leading-relaxed">Xero, Wave, or a clean spreadsheet works. Message me first to confirm.</p>
-					</div>
-					<div>
-						<p class="font-medium text-stone-900 mb-2">Why so cheap?</p>
-						<p class="text-stone-700 leading-relaxed">It's a fixed-scope audit, not a retainer. Two hours of focused CFO eyes. Nothing more, nothing less.</p>
-					</div>
-					<div>
-						<p class="font-medium text-stone-900 mb-2">What if the audit isn't useful?</p>
-						<p class="text-stone-700 leading-relaxed">Refund, no friction. Reply to the email, get your money back.</p>
-					</div>
-					<div>
-						<p class="font-medium text-stone-900 mb-2">Will you push me into a retainer?</p>
-						<p class="text-stone-700 leading-relaxed">No. The optional build is the only upsell, and it's only offered if you ask after the audit. If you don't, that's the end. No follow-up.</p>
+							<!-- Task restated -->
+							<div class="mb-5">
+								<p class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted mb-2.5">The task, restated</p>
+								<div class="space-y-1.5">
+									<div class="h-2 bg-hairline rounded-sm w-full"></div>
+									<div class="h-2 bg-hairline rounded-sm w-[88%]"></div>
+									<div class="h-2 bg-hairline rounded-sm w-[64%]"></div>
+								</div>
+							</div>
+
+							<!-- Agent -->
+							<div class="mb-5">
+								<p class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted mb-2">The agent I'd build</p>
+								<p class="font-serif italic text-[13px] leading-snug text-ink-soft">
+									A triage agent that watches your support inbox, drafts replies in your voice for routine inquiries, and escalates the rest with a one-line summary.
+								</p>
+							</div>
+
+							<!-- Stack -->
+							<div class="mb-5">
+								<p class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted mb-2.5">The stack</p>
+								<dl class="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-[11px]">
+									<dt class="font-mono text-muted">Model</dt>
+									<dd class="text-ink-soft">Claude Sonnet 4.6</dd>
+									<dt class="font-mono text-muted">Trigger</dt>
+									<dd class="text-ink-soft">Gmail label watch</dd>
+									<dt class="font-mono text-muted">Output</dt>
+									<dd class="text-ink-soft">Drafts in label</dd>
+								</dl>
+							</div>
+
+							<!-- Prompt snippet -->
+							<div class="mb-5">
+								<p class="font-mono text-[9px] uppercase tracking-[0.18em] text-muted mb-2">System prompt</p>
+								<pre class="bg-ink text-cream/90 p-3 rounded-sm font-mono text-[9px] leading-relaxed overflow-hidden"><span class="text-accent">SYSTEM:</span> You are a customer-support
+triage agent for &lbrace;company&rbrace;. Read each
+inbound email; draft a reply in their
+voice; escalate refunds to a human.
+&lbrace;... 12 more lines&rbrace;</pre>
+							</div>
+
+							<!-- Build estimate -->
+							<div class="flex items-center justify-between pt-4 border-t border-hairline">
+								<p class="font-mono text-[10px] uppercase tracking-wider text-muted">Build estimate</p>
+								<div class="font-mono text-[11px] text-accent border border-accent/40 bg-accent-soft px-2.5 py-1 rounded-sm tabular-nums">
+									$499 · 48 hrs
+								</div>
+							</div>
+						</article>
+						<!-- Caption -->
+						<p class="font-mono text-[10px] tracking-widest uppercase text-muted text-center lg:text-left mt-6 lg:mt-8 lg:pl-2">
+							Roughly what arrives in your inbox tonight
+						</p>
 					</div>
 				</div>
-			</section>
 
-			<!-- CTA repeat -->
-			<section class="border-t border-stone-200 pt-12">
-				<h2 class="font-serif text-3xl mb-6 tracking-tight">Start tonight.</h2>
-				<a href={STRIPE_AUDIT_URL} class="inline-block bg-stone-900 text-stone-50 px-6 py-3 rounded-md font-medium hover:bg-stone-800 transition tabular-nums mb-8">
-					Start the audit — $99
-				</a>
-				<p class="font-mono text-xs text-stone-500 tracking-wider">
-					Books &amp; Agents · Duluth, Minnesota
+			</div>
+		</section>
+
+		<!-- Credibility row -->
+		<section class="border-t border-hairline bg-surface/60">
+			<div class="mx-auto max-w-4xl px-6 py-12 sm:py-14">
+				<p class="font-serif text-lg sm:text-xl text-ink-soft leading-relaxed italic">
+					Run by Kyle Dickinson — CFO at Miller Creek Lawn &amp; Landscape, fractional CFO advisor to small businesses, co-owner of a 121-year-old menswear shop in Duluth. Building agentic Claude workflows before "agents" was a buzzword.
 				</p>
-			</section>
+			</div>
+		</section>
 
-		</main>
+		<!-- The trade -->
+		<section class="mx-auto max-w-3xl px-6 py-20 sm:py-24">
+			<p class="font-mono text-[11px] uppercase tracking-[0.2em] text-muted mb-3">01 · The trade</p>
+			<h2 class="font-serif text-3xl sm:text-4xl mb-12 tracking-tight">Three paragraphs in.<br />A working agent design out.</h2>
+			<div class="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-12">
+				<div>
+					<p class="font-mono text-[10px] uppercase tracking-[0.2em] text-muted mb-4">You send</p>
+					<ul class="space-y-3 text-ink-soft leading-relaxed">
+						<li class="flex gap-3">
+							<span class="text-accent select-none">—</span>
+							<span>Three paragraphs about your most painful repetitive task: what gets done, who does it, what's bad about it.</span>
+						</li>
+						<li class="flex gap-3">
+							<span class="text-accent select-none">—</span>
+							<span>The tools the task currently touches.</span>
+						</li>
+						<li class="flex gap-3">
+							<span class="text-accent select-none">—</span>
+							<span><span class="tabular-nums font-medium text-ink">$99</span> via Stripe.</span>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<p class="font-mono text-[10px] uppercase tracking-[0.2em] text-muted mb-4">You get tonight</p>
+					<ul class="space-y-3 text-ink-soft leading-relaxed">
+						<li class="flex gap-3">
+							<span class="text-accent select-none">—</span>
+							<span>The agent I'd build, in plain English, with a clear role and boundaries.</span>
+						</li>
+						<li class="flex gap-3">
+							<span class="text-accent select-none">—</span>
+							<span>The exact stack — model, orchestration, integrations.</span>
+						</li>
+						<li class="flex gap-3">
+							<span class="text-accent select-none">—</span>
+							<span>The system-prompt skeleton — handable to any competent dev who could ship it.</span>
+						</li>
+						<li class="flex gap-3">
+							<span class="text-accent select-none">—</span>
+							<span>Build estimate, monthly run cost, and one sharp observation about your business worth your time.</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- Anatomy of the audit -->
+		<section id="anatomy" class="border-t border-hairline bg-surface/40">
+			<div class="mx-auto max-w-5xl px-6 py-20 sm:py-24">
+				<p class="font-mono text-[11px] uppercase tracking-[0.2em] text-muted mb-3">02 · Anatomy of the audit</p>
+				<h2 class="font-serif text-3xl sm:text-4xl mb-3 tracking-tight">Five sections, one page.</h2>
+				<p class="text-muted text-base mb-12 max-w-2xl">No decks, no roadmaps, no maturity scores. One page, dense with the actual work.</p>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+
+					<div class="bg-cream border border-hairline rounded-sm p-7">
+						<p class="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-3">i</p>
+						<h3 class="font-serif text-xl mb-3 text-ink">The task, restated</h3>
+						<p class="text-ink-soft leading-relaxed text-[15px]">Two sentences in your voice. Proves I read carefully. If this section lands, the rest reads as confident. If it misses, the rest reads as generic.</p>
+					</div>
+
+					<div class="bg-cream border border-hairline rounded-sm p-7">
+						<p class="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-3">ii</p>
+						<h3 class="font-serif text-xl mb-3 text-ink">The agent I'd build</h3>
+						<p class="text-ink-soft leading-relaxed text-[15px]">What it does. What it doesn't. Where it hands off to a human. The role is defined concretely, not aspirationally.</p>
+					</div>
+
+					<div class="bg-cream border border-hairline rounded-sm p-7">
+						<p class="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-3">iii</p>
+						<h3 class="font-serif text-xl mb-3 text-ink">The stack</h3>
+						<p class="text-ink-soft leading-relaxed text-[15px]">Model, orchestration, data sources, triggers. Each line named with a reason. No "AI-powered" hand-waving.</p>
+					</div>
+
+					<div class="bg-cream border border-hairline rounded-sm p-7">
+						<p class="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-3">iv</p>
+						<h3 class="font-serif text-xl mb-3 text-ink">The prompt + integration sketch</h3>
+						<p class="text-ink-soft leading-relaxed text-[15px]">The actual system-prompt skeleton plus the integration flow. Hand it to any competent dev and they'd ship.</p>
+					</div>
+
+					<div class="bg-cream border border-hairline rounded-sm p-7 md:col-span-2">
+						<p class="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-3">v</p>
+						<h3 class="font-serif text-xl mb-3 text-ink">One observation worth your time</h3>
+						<p class="text-ink-soft leading-relaxed text-[15px]">Not flattery, not a generic insight — something specific you'd nod at. The anchor that makes the audit forwardable to someone else.</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- Optional build -->
+		<section class="mx-auto max-w-3xl px-6 py-20 sm:py-24">
+			<div class="bg-accent-soft border border-accent/30 rounded-md p-8 sm:p-10">
+				<p class="font-mono text-[11px] uppercase tracking-[0.2em] text-accent mb-3">03 · Optional add-on</p>
+				<h2 class="font-serif text-3xl sm:text-4xl mb-4 tracking-tight text-ink">Build the agent.<br />$499. 48 hours.</h2>
+				<p class="text-ink-soft leading-relaxed max-w-2xl mb-5 text-[17px]">
+					If the audit lands and you want the agent in your stack, I build it within 48 hours. Working Claude project, Make/Zapier scenario, or custom MCP — whichever the audit specifies. One-page usage guide included. Thirty-minute handoff call.
+				</p>
+				<p class="font-mono text-sm text-ink tabular-nums mb-1">
+					$499. Offered after the audit. Never before.
+				</p>
+				<p class="text-muted text-sm">
+					The audit is half the build. We're not starting from scratch — we're shipping what the audit already specified.
+				</p>
+			</div>
+		</section>
+
+		<!-- FAQ -->
+		<section class="border-t border-hairline bg-surface/40">
+			<div class="mx-auto max-w-3xl px-6 py-20 sm:py-24">
+				<p class="font-mono text-[11px] uppercase tracking-[0.2em] text-muted mb-3">04 · Questions worth asking</p>
+				<h2 class="font-serif text-3xl sm:text-4xl mb-12 tracking-tight">The honest answers.</h2>
+
+				<div class="divide-y divide-hairline">
+					<div class="py-7">
+						<p class="font-serif text-xl text-ink mb-3 leading-snug">How is this different from asking ChatGPT yourself?</p>
+						<p class="text-ink-soft leading-relaxed">You're paying for the judgment about <em>which</em> AI to use and <em>where</em> it actually saves you hours. The AI itself is the easy part — anyone can prompt one. Knowing which task to point an agent at, what the agent should and shouldn't do, and how to integrate it without breaking your existing stack — that's the hard part. That's what the $99 buys.</p>
+					</div>
+					<div class="py-7">
+						<p class="font-serif text-xl text-ink mb-3 leading-snug">Why so cheap?</p>
+						<p class="text-ink-soft leading-relaxed">It's a fixed-scope audit, not a retainer. Two focused hours of operator eyes. Nothing more, nothing less. The economics work because the audit IS half the build — most $99 buyers who like the audit take the $499 build, and that's where the work compounds.</p>
+					</div>
+					<div class="py-7">
+						<p class="font-serif text-xl text-ink mb-3 leading-snug">What if I don't know what my most painful task is?</p>
+						<p class="text-ink-soft leading-relaxed">Send me three paragraphs about whatever feels worst this month. If it isn't a good candidate for an agent, I'll say so in the audit and refund. The refund happens more often than you'd guess — sometimes the answer is "hire a person," not "build an agent."</p>
+					</div>
+					<div class="py-7">
+						<p class="font-serif text-xl text-ink mb-3 leading-snug">What if the audit isn't useful?</p>
+						<p class="text-ink-soft leading-relaxed">Reply with the word "refund." Money back within 24 hours. No friction, no awkward email exchange. I'd rather take the refund than argue.</p>
+					</div>
+					<div class="py-7">
+						<p class="font-serif text-xl text-ink mb-3 leading-snug">Will you push me into a retainer?</p>
+						<p class="text-ink-soft leading-relaxed">No. The optional $499 build is the only upsell, and it's only offered after the audit if you ask. If you don't, that's the end. No follow-up unless you reach out.</p>
+					</div>
+					<div class="py-7">
+						<p class="font-serif text-xl text-ink mb-3 leading-snug">Who is this not for?</p>
+						<p class="text-ink-soft leading-relaxed">Enterprises with internal AI teams (you'd be wasting your time and mine). Pre-revenue founders without real workflows yet (there's nothing to audit). Anyone shopping for cheap output — the audit IS the value, and if it isn't useful the refund is yours.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA close -->
+		<section class="mx-auto max-w-4xl px-6 py-24 sm:py-32 text-center">
+			<p class="font-mono text-[11px] uppercase tracking-[0.2em] text-muted mb-4">05 · Start tonight</p>
+			<h2 class="font-serif text-4xl sm:text-5xl mb-10 tracking-tight leading-[1.05]">
+				Three paragraphs.<br />
+				<span class="text-accent">A working agent design</span> by morning.
+			</h2>
+			<a href={STRIPE_AUDIT_URL} class="inline-flex items-center gap-2 bg-accent text-cream px-7 py-4 rounded-md font-medium hover:bg-accent-hover transition tabular-nums text-lg">
+				Start the audit — $99
+				<span aria-hidden="true">→</span>
+			</a>
+		</section>
+
+		<!-- Footer -->
+		<footer class="border-t border-hairline">
+			<div class="mx-auto max-w-6xl px-6 py-10 flex flex-col sm:flex-row items-start sm:items-baseline justify-between gap-3">
+				<p class="font-mono text-xs tracking-[0.18em] uppercase text-muted">
+					Books <span class="text-hairline-strong">&amp;</span> Agents
+				</p>
+				<p class="font-mono text-xs text-muted">
+					Kyle Dickinson · Duluth, Minnesota · 2026
+				</p>
+			</div>
+		</footer>
 
 	</body>
 </html>
